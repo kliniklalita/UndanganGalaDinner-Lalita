@@ -92,3 +92,23 @@ body.lock #nav{display:none}
 .fit{background:rgba(255,255,255,.06);border:1px solid rgba(239,219,109,.4);padding:14px 8px 12px}
 .fit svg{height:140px;width:auto;margin:auto;display:block}
 .fit small{display:block;margin-top:10px;font-size:12px;line-height:1.45;color:#e9e2cc}
+
+
+/* ===== Revisi 3 ===== */
+.logos{display:flex;align-items:center;justify-content:center;gap:12px}.logos img{width:auto;margin:0;max-width:none}
+.vl{width:1px;height:34px;background:rgba(194,148,5,.65);flex:none}
+.y10{text-align:center;line-height:1}.y10 b{display:block;font-size:36px;font-weight:700;background:linear-gradient(180deg,#fbefb0,#e2bf4a 55%,#a67c00);-webkit-background-clip:text;background-clip:text;color:transparent}
+.y10 small{display:block;font-size:8px;letter-spacing:.32em;color:var(--gl);margin-top:3px}
+/* Perjalanan dua kolom */
+.gj{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px;text-align:left}.gj:before{display:none}
+.gcol{position:relative}.gcol:before{content:"";position:absolute;left:5px;top:30px;bottom:8px;width:3px;border-radius:3px;background:linear-gradient(180deg,#f6e48a,#c29405 60%,#1d365c)}
+.gh{font:600 11px Inter,sans-serif;letter-spacing:.22em;color:var(--gold);padding-left:20px;margin-bottom:12px}
+.gi{padding:0 0 12px 20px}.gi:before{left:-1px;top:12px;width:15px;height:15px;border-width:4px;box-shadow:0 0 0 2px var(--ivory)}
+.gc{display:block;padding:9px}.gt{display:flex;align-items:center;gap:8px}
+.gc img{width:38px;height:38px;border-radius:50%;padding:1px}.gy{font-size:20px}
+.gc p{font-size:11.5px;line-height:1.45;margin:7px 0}.gc em{font-size:10px;line-height:1.5;padding:2px 9px}
+/* Dress code */
+.ag{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px;text-align:left}
+.ag div{background:rgba(255,255,255,.06);border:1px solid rgba(239,219,109,.4);padding:14px}
+.ag b{display:block;font:600 15px var(--serif);color:var(--gl);margin-bottom:4px}.ag span{font-size:13px;line-height:1.6;color:#e9e2cc}
+.att{width:100%;margin-top:12px;border:1px solid var(--gl);border-radius:14px}
