@@ -1,7 +1,7 @@
 // ===== SEMUA DATA ACARA DIEDIT DI SINI =====
 const CONFIG = {
-  apiUrl: "",                 // URL Web App Google Apps Script (isi setelah deploy)
-  allowNameInUrl: false,      // true hanya untuk uji coba: ?guest=Nama
+  apiUrl: "https://script.google.com/macros/s/AKfycby4vjB4fg_qMqKWxOW0-isDjpQ0jn7PjlsMiAgTD1jwYDAPWDALwVaDIvkWjduRYwuVpQ/exec",                 // URL Web App Google Apps Script (isi setelah deploy)
+  allowNameInUrl: true,      // true hanya untuk uji coba: ?guest=Nama
   fallbackName: "Bapak/Ibu Tamu Kehormatan",
   org: "Klinik Lalita", orgTagline: "Klinik Tumbuh Kembang Anak",
   eventLabel: "Gala Dinner", eventName: "Lalita’s Odyssey", years: "10",
