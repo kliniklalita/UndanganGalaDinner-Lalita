@@ -20,9 +20,9 @@ const CONFIG = {
   rsvpDeadline: "13 November 2026",
   journeyText: "Sepuluh tahun perjalanan bersama anak-anak, keluarga, tenaga profesional, dan mitra. Terima kasih kepada semua yang telah menjadi bagian dari kisah Lalita.",
   journey: [   // ganti foto/keterangan sesuai data resmi
-    {img:"assets/journey-1.webp", cap:"Lalita’s Journey of Growth & Gratitude"},
-    {img:"assets/journey-2.webp", cap:"Kebersamaan keluarga besar Lalita"},
-    {img:"assets/journey-3.webp", cap:"Semangat tim Lalita"}
+    {img:"journey-1.webp", cap:"Lalita’s Journey of Growth & Gratitude"},
+    {img:"journey-2.webp", cap:"Kebersamaan keluarga besar Lalita"},
+    {img:"journey-3.webp", cap:"Semangat tim Lalita"}
   ],
   musicCredit: "Musik: “The Feeling” – AgusAlvarez & Luke Bergs (freetouse.com)"
 };
