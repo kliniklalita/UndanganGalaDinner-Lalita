@@ -1,0 +1,57 @@
+/* ===== Lapisan tampilan elegan (dimuat setelah style.css) ===== */
+:root{--serif:"Playfair Display",Georgia,serif}
+
+/* Tipografi (tetap Playfair agar senada dengan poster resmi) */
+h1,h2,h3,.sf{font-family:var(--serif)}
+h1{font-weight:600;letter-spacing:.06em}
+h2{font-size:clamp(28px,7vw,42px);font-weight:600;letter-spacing:.03em;line-height:1.2}
+.eb{font-size:11px;font-weight:500;letter-spacing:.42em}
+p{line-height:1.9}
+.dk p{color:#e9e2cc}
+section{padding:88px 24px}
+
+/* Judul emas (gold foil) pada bagian gelap */
+#cover h1,.dk h2{background:linear-gradient(180deg,#fbefb0 0%,#e2bf4a 52%,#a67c00 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* Bingkai emas ganda di cover */
+#cover::before{content:"";position:absolute;inset:16px;border:1px solid rgba(194,148,5,.65);pointer-events:none;z-index:2}
+#cover::after{content:"";position:absolute;inset:25px;border:1px solid rgba(194,148,5,.28);pointer-events:none;z-index:2}
+
+/* Garis hias dengan berlian di tengah */
+.rule{width:150px;position:relative;overflow:visible}
+.rule::after{content:"";position:absolute;left:50%;top:50%;width:8px;height:8px;background:var(--gold);transform:translate(-50%,-50%) rotate(45deg)}
+
+/* Garis tipis pemisah bagian gelap */
+section.dk{border-top:1px solid rgba(194,148,5,.35)}
+
+/* Tombol dan kartu lebih tegas dan ramping */
+.btn{border-radius:0;font-size:12px;letter-spacing:.3em;padding:15px 38px;box-shadow:0 8px 26px rgba(194,148,5,.28)}
+.btn.ghost{background:none;border:1px solid var(--gl);color:var(--gl);box-shadow:none;margin-top:6px}
+.it{border-radius:2px;padding:22px 18px;background:#fff}
+.it i{letter-spacing:.32em}
+a.it{border-color:var(--gold)}
+.cds div{border-radius:2px;border-color:rgba(194,148,5,.7);background:rgba(255,255,255,.04)}
+.cds b{font:600 32px/1.1 var(--serif)}
+#gal img{border-radius:2px;border:1px solid var(--gold);padding:6px;background:#fff}
+.m{background:#fff;border-left-width:2px}
+.m b{font-family:var(--serif);font-size:17px}
+
+/* Gerak masuk lebih halus */
+.rv{transform:translateY(16px);transition:opacity 1.2s ease,transform 1.2s ease}
+
+/* Form RSVP */
+label{font-size:15px;font-weight:500;letter-spacing:.02em}
+input:not([type=radio]),textarea,select{border-radius:2px}
+select{-webkit-appearance:none;appearance:none;padding-right:40px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%231d365c' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 14px center}
+.rad label{border-radius:2px}
+.rad label:has(input:checked){background:rgba(239,219,109,.2);border:2px solid var(--gl);font-weight:600}
+.help{margin-top:30px;padding-top:22px;border-top:1px solid rgba(239,219,109,.3);font-size:14px}
+
+/* Rundown */
+.tl{list-style:none;margin:22px 0 0;padding:0;text-align:left}
+.tl li{display:grid;grid-template-columns:128px 1fr;gap:14px;padding:13px 0;border-bottom:1px solid #e3dcc6}
+.tl b{font:600 15px/1.7 var(--serif);color:var(--gold)}
+
+/* Catatan konfirmasi (acuan kursi dan tiket) */
+.note{margin:22px 0 6px;padding:18px 20px;border:1px solid rgba(239,219,109,.45);background:rgba(255,255,255,.04);text-align:left;font-size:15px}
+.note p{margin:0 0 12px;line-height:1.7}.note p:last-child{margin:0}
