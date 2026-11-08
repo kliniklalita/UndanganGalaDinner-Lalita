@@ -59,3 +59,36 @@ select{-webkit-appearance:none;appearance:none;padding-right:40px;background:#ff
 /* Halaman pembuka: tampil penuh satu layar setelah undangan dibuka */
 #intro{min-height:100svh;display:flex;align-items:center;justify-content:center}
 #intro .w{width:100%}
+
+
+/* ===== Revisi 2 ===== */
+/* Amplop: nama tamu tidak tertutup lipatan */
+#env{height:198px}#env .card{padding-top:92px}#env .card small{font-size:11px;letter-spacing:.1em}#env .card b{font-size:18px;line-height:1.25;display:block}
+#cover .sf{text-shadow:0 2px 14px rgba(0,0,0,.65)}.fl{opacity:.4}
+body.lock #nav{display:none}
+/* Kop surat */
+.kop{padding-bottom:6px}.kt{font-size:clamp(34px,10vw,50px);margin:.1em 0 .3em;letter-spacing:.08em}
+.kline{height:5px;margin:26px auto 34px;border-top:1px solid var(--gold);border-bottom:1px solid rgba(194,148,5,.45)}
+/* Judul acara: emas tebal */
+.dk .evt{font-weight:700;font-size:clamp(25px,6.6vw,34px);line-height:1.3;margin:26px 0;background:linear-gradient(180deg,#fff2b8,#e8c44f 50%,#b88a00);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 2px 10px rgba(194,148,5,.35))}
+.evt small{display:block;font-size:.6em;font-weight:700;font-style:italic;margin-top:8px;letter-spacing:.03em}
+/* Alur perjalanan */
+.gj{position:relative;margin:34px 0 0;text-align:left}
+.gj:before{content:"";position:absolute;left:19px;top:10px;bottom:20px;width:4px;border-radius:4px;background:linear-gradient(180deg,#f6e48a,#c29405 55%,#1d365c)}
+.gi{position:relative;padding:0 0 22px 56px}
+.gi:before{content:"";position:absolute;left:7px;top:8px;width:28px;height:28px;box-sizing:border-box;border-radius:50%;background:#fff;border:7px solid var(--gold);box-shadow:0 0 0 3px var(--ivory)}
+.gi:nth-child(even):before{border-color:var(--navy)}
+.gc{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid #e3dcc6;padding:10px;box-shadow:0 8px 22px rgba(29,54,92,.09)}
+.gc img{width:84px;height:84px;object-fit:cover;flex:none;border:1px solid var(--gold);padding:2px;background:#fff;margin:0}
+.gy{font-size:24px;font-weight:700;color:var(--navy);line-height:1}
+.gc p{margin:6px 0 8px;font-size:13px;line-height:1.5;color:var(--ink)}
+.gc em{font-style:normal;display:inline-block;font-size:11px;font-weight:600;letter-spacing:.03em;padding:3px 11px;background:var(--navy);color:var(--gl);border-radius:20px}
+/* Detail ringkas */
+#detail .grid{grid-template-columns:1fr 1fr}
+/* Save the date */
+#cd .btn{margin-top:14px}
+/* Contoh dresscode */
+.fits{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.fit{background:rgba(255,255,255,.06);border:1px solid rgba(239,219,109,.4);padding:14px 8px 12px}
+.fit svg{height:140px;width:auto;margin:auto;display:block}
+.fit small{display:block;margin-top:10px;font-size:12px;line-height:1.45;color:#e9e2cc}
