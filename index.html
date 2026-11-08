@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Gala Dinner – Lalita’s Odyssey · 10 Years</title>
+<meta name="robots" content="noindex"><meta name="theme-color" content="#0c1c38">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head><body class="lock">
+<div id="cover" class="dk">
+  <img class="fl" src="assets/flare.webp" alt="">
+  <div class="cw">
+    <img src="assets/logo-lalita.png" width="150" alt="Klinik Lalita">
+    <p class="eb gl">Invitation</p>
+    <h1 class="sf">GALA DINNER</h1>
+    <p class="sf" style="font-size:20px;margin:0">Lalita’s Odyssey · 10 Years</p>
+    <div id="env"><i class="flap"></i><div class="card"><small>Kepada Yth.</small><b class="gname sf"></b></div></div>
+    <button class="btn" id="open">Buka Undangan</button>
+  </div>
+</div>
+
+<section class="dk"><div class="w rv">
+  <p class="eb gl">Kepada Yth.</p><h2 class="gname sf"></h2><div class="rule"></div>
+  <p>Dengan hormat,</p>
+  <p>Dalam rangka merayakan perjalanan satu dekade Klinik Lalita, kami dengan penuh sukacita mengundang Bapak/Ibu untuk hadir dalam acara:</p>
+  <p class="sf gl" style="font-size:24px">Gala Dinner – Lalita’s Odyssey: 10 Years<br><small style="font-size:16px">A Decade of Journey and Beyond</small></p>
+  <p>Kehadiran Bapak/Ibu akan menjadi kehormatan dan kebahagiaan tersendiri bagi kami. Kami menantikan kehadiran Bapak/Ibu untuk merayakan perjalanan, kolaborasi, dan berbagai pencapaian yang telah kita lalui bersama.</p>
+</div></section>
+
+<section id="intro" style="background:#fff"><div class="w rv">
+  <p class="eb">Invitation</p><h2 class="sf navy">GALA DINNER</h2>
+  <img src="assets/logo-odyssey.png" width="320" alt="Lalita’s Odyssey – A Decade of Journey and Beyond">
+  <div class="ten sf">10</div><p class="eb" style="margin-top:-14px">Years</p>
+  <p class="sf" style="font-size:20px">A Decade of Journey and Beyond</p>
+</div></section>
+
+<section id="journey"><div class="w rv">
+  <p class="eb">Perjalanan Kita</p><h2 class="sf navy">Satu Dekade Lalita</h2><div class="rule"></div>
+  <p data-c="journeyText"></p><div id="gal"></div>
+</div></section>
+
+<section class="dk" id="cd"><div class="w rv">
+  <p class="eb gl">Menuju Perayaan</p><h2 class="sf" id="cdt">Hitung Mundur</h2><div class="cds" id="cds"></div>
+</div></section>
+
+<section id="detail" style="background:#fff"><div class="w rv">
+  <p class="eb">Detail Acara</p><h2 class="sf navy">Save the Date</h2>
+  <div class="grid">
+    <a class="it" id="cal" target="_blank" rel="noopener"><i>Hari &amp; Tanggal ＋ Kalender</i><span data-c="dateText"></span></a>
+    <a class="it" id="cal2" target="_blank" rel="noopener"><i>Waktu ＋ Kalender</i><span data-c="timeText"></span></a>
+    <div class="it"><i>Acara</i>Gala Dinner – Lalita’s Odyssey<br>10 Years · A Decade of Journey and Beyond</div>
+    <div class="it"><i>Lokasi</i><span data-c="venue"></span></div>
+  </div><p style="font-size:13px;color:#6b7285">Ketuk tanggal atau waktu untuk menambahkan ke Google Calendar.</p>
+</div></section>
+
+<section class="dk" id="dress"><div class="w rv">
+  <p class="eb gl">Gala Dinner Dress Code</p><h2 class="sf" data-c="dressCode"></h2>
+  <p>Color Palette</p><div class="sw" id="sw"></div>
+  <div class="two"><div><h3 class="sf gl">Pria</h3><ul id="men"></ul></div><div><h3 class="sf gl">Wanita</h3><ul id="women"></ul></div></div>
+</div></section>
+
+<section id="venue"><div class="w rv">
+  <p class="eb">Lokasi</p><h2 class="sf navy" data-c="venue"></h2><p data-c="address"></p>
+  <iframe id="map" title="Peta lokasi" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <a class="btn" id="maps" target="_blank" rel="noopener">Lihat Lokasi</a>
+</div></section>
+
+<section class="dk" id="rsvpS"><div class="w rv">
+  <p class="eb gl">RSVP</p><h2 class="sf">Konfirmasi Kehadiran</h2>
+  <p>Mohon konfirmasi paling lambat <b class="gl" data-c="rsvpDeadline"></b>.</p>
+  <form id="rsvp" novalidate>
+    <input name="website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+    <label>Nama Lengkap<input id="rn" name="name" maxlength="80" required></label>
+    <div class="rad"><label><input type="radio" name="att" value="Hadir"> Hadir</label><label><input type="radio" name="att" value="Tidak Hadir"> Tidak Hadir</label></div>
+    <label id="nw">Jumlah Tamu yang Hadir<select name="n"></select></label>
+    <label>Catatan (opsional)<textarea name="notes" maxlength="300" rows="3"></textarea></label>
+    <button class="btn" type="submit">Kirim Konfirmasi</button><p id="rm" role="status"></p>
+  </form>
+</div></section>
+
+<section id="wish" style="background:#fff"><div class="w rv">
+  <p class="eb">Ucapan &amp; Doa</p><h2 class="sf navy">Pesan untuk Lalita</h2>
+  <form id="mf" novalidate><input name="website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+    <label>Nama<input id="mn" name="name" maxlength="80"></label>
+    <label>Ucapan<textarea name="msg" maxlength="400" rows="3"></textarea></label>
+    <button class="btn" type="submit">Kirim Ucapan</button><p id="mm" role="status"></p></form>
+  <div id="msgs"></div>
+</div></section>
+
+<section class="dk" id="end"><div class="w rv">
+  <img src="assets/logo-lalita.png" width="150" alt="Klinik Lalita"><div class="rule"></div>
+  <p>Sepuluh tahun adalah perjalanan yang penuh cerita, pembelajaran, dan kolaborasi.</p>
+  <p>Terima kasih telah menjadi bagian dari perjalanan Klinik Lalita.</p>
+  <p class="sf gl" style="font-size:20px">We look forward to celebrating this special milestone with you.</p>
+  <p class="sf" style="font-size:22px">Gala Dinner – Lalita’s Odyssey: 10 Years</p>
+  <small id="cr" style="opacity:.6"></small>
+</div></section>
+
+<nav id="nav"><a href="#detail">Acara</a><a href="#venue">Lokasi</a><a href="#rsvpS">RSVP</a><a href="#wish">Ucapan</a><button id="mus" aria-label="Musik">♪</button></nav>
+<audio id="au" loop preload="none" src="assets/music.mp3"></audio>
+<script src="config/config.js"></script><script src="js/app.js"></script>
+</body></html>
