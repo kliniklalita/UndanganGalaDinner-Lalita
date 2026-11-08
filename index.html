@@ -13,8 +13,11 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="elegan.css">
 </head><body class="lock">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#8a6600"/><stop offset=".35" stop-color="#f6e48a"/><stop offset=".65" stop-color="#c29405"/><stop offset="1" stop-color="#f1d870"/></linearGradient></defs>
+<symbol id="rb" viewBox="0 0 320 140"><path d="M0 96C58 20 124 128 196 58S292 6 320 26L320 50C292 30 244 72 196 86S58 152 0 120Z" fill="url(#g)"/><path d="M0 108C58 36 124 140 196 72S292 18 320 38" fill="none" stroke="#fff6c8" stroke-opacity=".55" stroke-width="2.5"/></symbol></svg>
+<div class="cf" id="cf"></div>
 <div id="cover" class="dk">
-  <img class="fl" src="flare.webp" alt="">
+  <img class="fl" src="flare.webp" alt=""><svg class="rib r1"><use href="#rb"/></svg><svg class="rib r2"><use href="#rb"/></svg>
   <div class="cw">
     <img src="logo-lalita.png" width="150" alt="Klinik Lalita">
     <p class="eb gl">Invitation</p>
@@ -25,7 +28,7 @@
   </div>
 </div>
 
-<section class="dk"><div class="w rv">
+<section class="dk"><svg class="rib r1"><use href="#rb"/></svg><svg class="rib r2"><use href="#rb"/></svg><div class="w rv">
   <div class="kop"><div class="logos"><img src="logo-lalita.png" style="height:32px" alt="Klinik Lalita"><span class="vl"></span><img src="logo-odyssey.png" style="height:46px" alt="Lalita’s Odyssey – A Decade of Journey and Beyond"><span class="vl"></span><div class="y10"><b class="sf">10</b><small>YEARS</small></div></div><p class="eb gl" style="margin-top:22px">Invitation</p><h2 class="sf kt">GALA DINNER</h2></div><div class="kline"></div>
   <p class="eb gl">Kepada Yth.</p><h2 class="gname sf"></h2><div class="rule"></div>
   <p>Dengan hormat,</p>
@@ -56,7 +59,7 @@
   <a class="btn" id="maps" target="_blank" rel="noopener">Lihat Lokasi</a>
 </div></section>
 
-<section class="dk" id="cd"><div class="w rv">
+<section class="dk" id="cd"><svg class="rib r1"><use href="#rb"/></svg><div class="w rv">
   <p class="eb gl">Menuju Perayaan</p><h2 class="sf" id="cdt">Hitung Mundur</h2><div class="cds" id="cds"></div>
   <p style="margin:26px 0 0">Simpan tanggalnya agar tidak terlewat</p><a class="btn" id="cal3" target="_blank" rel="noopener">Save the Date</a>
 </div></section>
@@ -113,7 +116,7 @@
   <div id="msgs"></div>
 </div></section>
 
-<section class="dk" id="end"><div class="w rv">
+<section class="dk" id="end"><svg class="rib r1"><use href="#rb"/></svg><svg class="rib r2"><use href="#rb"/></svg><div class="w rv">
   <img src="logo-lalita.png" width="150" alt="Klinik Lalita"><div class="rule"></div>
   <p>Sepuluh tahun adalah perjalanan yang penuh cerita, pembelajaran, dan kolaborasi.</p>
   <p>Terima kasih telah menjadi bagian dari perjalanan Klinik Lalita.</p>
@@ -126,4 +129,19 @@
 <audio id="au" loop preload="none" src="music.mp3"></audio>
 <script src="config.js"></script><script src="app.js"></script>
 <script>document.getElementById("cal3").href=document.getElementById("cal").href</script>
+<script>
+(function(){
+ var LOOP=false; /* true = kilauan terus muncul setelah undangan dibuka */
+ var $=function(i){return document.getElementById(i)},R=Math.random;
+ function mk(t,cls,css){var e=document.createElement(t);e.className=cls;e.style.cssText=css;return e}
+ function burst(){
+  var c=$('cf');c.innerHTML='';c.className='cf';
+  for(var i=0;i<26;i++){var a=R()*6.283,d=90+R()*190;c.appendChild(mk('b','bp','--dx:'+Math.cos(a)*d+'px;--dy:'+Math.sin(a)*d+'px;animation-delay:'+R()*.25+'s'))}
+  for(i=0;i<48;i++)c.appendChild(mk('i','pc','left:'+R()*100+'%;width:'+(4+R()*5)+'px;height:'+(6+R()*9)+'px;animation-duration:'+(6+R()*7)+'s;animation-delay:'+(.4+R()*3)+'s;background:'+(R()>.4?'#efdb6d':'#c29405')));
+  for(i=0;i<24;i++)c.appendChild(mk('s','st','left:'+R()*96+'%;top:'+R()*92+'%;animation-duration:'+(1.6+R()*1.8)+'s;animation-delay:'+R()*3+'s'));
+  if(!LOOP){setTimeout(function(){c.classList.add('fade')},8000);setTimeout(function(){c.innerHTML=''},11500)}
+ }
+ $('open').addEventListener('click',burst);
+})();
+</script>
 </body></html>

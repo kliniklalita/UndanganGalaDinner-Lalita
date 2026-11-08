@@ -112,3 +112,16 @@ body.lock #nav{display:none}
 .ag div{background:rgba(255,255,255,.06);border:1px solid rgba(239,219,109,.4);padding:14px}
 .ag b{display:block;font:600 15px var(--serif);color:var(--gl);margin-bottom:4px}.ag span{font-size:13px;line-height:1.6;color:#e9e2cc}
 .att{width:100%;margin-top:12px;border:1px solid var(--gl);border-radius:14px}
+
+
+/* ===== Revisi 4: pita emas + kilauan saat undangan dibuka ===== */
+.rib{position:absolute;width:min(78vw,380px);height:auto;aspect-ratio:320/140;z-index:1;pointer-events:none;filter:drop-shadow(0 8px 10px rgba(0,0,0,.4))}
+.r1{top:-8px;right:-70px;transform:rotate(8deg)}.r2{bottom:6px;left:-80px;transform:rotate(-168deg)}
+.cf{position:fixed;inset:0;z-index:70;pointer-events:none;overflow:hidden;transition:opacity 3s}.cf.fade{opacity:0}
+.cf .pc{position:absolute;top:-20px;border-radius:2px;opacity:.9;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(112vh) rotate(540deg) translateX(30px)}}
+.cf .st{position:absolute;width:15px;height:15px;background:#fff3b0;clip-path:polygon(50% 0,60% 40%,100% 50%,60% 60%,50% 100%,40% 60%,0 50%,40% 40%);opacity:0;animation:tw 2s ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:0;transform:scale(.2) rotate(0)}50%{opacity:1;transform:scale(1) rotate(45deg)}}
+.cf .bp{position:absolute;left:50%;top:46%;width:7px;height:7px;border-radius:50%;background:#efdb6d;box-shadow:0 0 10px #efdb6d;animation:bp 1.6s ease-out forwards}
+@keyframes bp{to{transform:translate(var(--dx),var(--dy)) scale(.2);opacity:0}}
+@media(prefers-reduced-motion:reduce){.cf{display:none}}
