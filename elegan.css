@@ -55,3 +55,7 @@ select{-webkit-appearance:none;appearance:none;padding-right:40px;background:#ff
 /* Catatan konfirmasi (acuan kursi dan tiket) */
 .note{margin:22px 0 6px;padding:18px 20px;border:1px solid rgba(239,219,109,.45);background:rgba(255,255,255,.04);text-align:left;font-size:15px}
 .note p{margin:0 0 12px;line-height:1.7}.note p:last-child{margin:0}
+
+/* Halaman pembuka: tampil penuh satu layar setelah undangan dibuka */
+#intro{min-height:100svh;display:flex;align-items:center;justify-content:center}
+#intro .w{width:100%}
